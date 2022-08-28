@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  height: 20vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.h1 {
+  margin-left: 5rem;
+}
+
+.main1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  height: 150vh;
+}
+.imgs {
+  width: 75%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  transition: all 1s;
+  position: relative;
+}
+.imgs:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
+.card-name p {
+  writing-mode: vertical-rl;
+  display: block;
+  position: absolute;
+  right: -1rem;
+  font-size: 10px;
+
+}
+
+.pdown {
+  text-align: center;
+  font-size: 24px;
+}
+
+#imgs1 {
+  background-image: url(./images/photo1.png);
+}
+
+#imgs2 {
+  background-image: url(./images/photo2.png);
+}
+
+#imgs3 {
+  background-image: url(./images/photo3.png);
+}
+#imgs4 {
+  background-image: url(./images/photo4.png);
+}
+#imgs5 {
+  background-image: url(./images/photo5.png);
+}
+#imgs6 {
+  background-image: url(./images/photo6.png);
+}
+
+.img2{
+  margin-top: 5rem;
+}
+.img5{
+  margin-top: 5rem;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    width: 45%;
+    height: 30%;
+    margin: 1rem;
+  }
+
+  .main1 {
+    height: 175vh;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img2,.img4,.img6{
+    margin-top: 4rem;
+  }
+
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    width: 90%;
+    height: 30%;
+    margin: 0.5rem;
+  }
+
+  .main1 {
+    height: 200vh;
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    
+  }
+
+
+}
